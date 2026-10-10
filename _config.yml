@@ -183,6 +183,15 @@ markdown    : kramdown
 highlighter : rouge
 permalink   : date
 
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - slash-div
+    - color-functions
+    - if-function
+
 exclude:
   - CHANGELOG.md
   - HOW_TO_RELEASE.md
